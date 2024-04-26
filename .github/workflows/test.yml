@@ -10,6 +10,7 @@ jobs:
       matrix:
         node-version: [20.x]
     steps:
+      - run: npm i jest
       - run: NODE_OPTIONS=--experimental-vm-modules npx jest
 
   
